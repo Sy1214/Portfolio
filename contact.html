@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>contact</title>
+	<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+	<link rel="stylesheet" type="text/css"
+		href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-14/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+	<style>
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<div id="header"></div>
+	</header>
+	<div class="contact_info">
+		<h2 class="heading">
+			CONTACT<br>
+			<span class="sub">お問合せ</ｓ>
+		</h2>
+		<div class="Form">
+			<p class="textbox">
+				制作の依頼・ご相談など、御用の際はお気軽にお問い合わせください。
+				<br>
+				ご連絡は下記フォームより承っております。
+			</p>
+			<!--
+			<div class="Form-Item">
+				<p class="Form-Item-Label">
+					<span class="Form-Item-Label-Required">必須</span>会社名
+				</p>
+				<input type="text" class="Form-Item-Input" placeholder="例）株式会社TEST">
+			</div>
+			-->
+			<div class="Form-Item">
+				<p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+				<input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+			</div>
+			<div class="Form-Item">
+				<p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+				<input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+			</div>
+			<div class="Form-Item">
+				<p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス(確認)</p>
+				<input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+			</div>
+			<!-- <div class="Form-Item">
+				<p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>カテゴリ</p>
+				<input type="text" class="Form-Item-Input" placeholder="ここはセレクトボックスにする">
+			</div> -->
+			<div class="Form-Item">
+				<p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+				<textarea class="Form-Item-Textarea"></textarea>
+			</div>
+			<!-- <input type="submit" class="button send" value="送信する"> -->
+			<a class="button_arrow" href="contact_confirmation.html">送信する</i></a>
+		</div>
+	</div>
+	<!-- <footer>
+		<p>Copyright©Kitaoka Yukako. All Rights Reserved.</p>
+	</footer> -->
+	<!-- footer -->
+	<footer class="footer">
+		<div id="footer"></div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/stats.js"></script>
+	<!-- header -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#header').load('./inc/header.html');
+		});
+	</script>
+	<!-- footer -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#footer').load('inc/footer.html');
+		});
+	</script>
+</body>
+
+</html>
