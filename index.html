@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>Portfolio</title>
+	<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+	<link rel="stylesheet" type="text/css"
+		href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-14/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+	<style>
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<div id="header"></div>
+	</header>
+	<!-- <div class="wave">
+		<div class="myName">
+			<p>WEB DESIGNER</p>
+			<h1>KITAOKA YUKAKO</h1>
+		</div>
+		<canvas id="waveCanvas"></canvas>
+	</div> -->
+	<section class="mv">
+	</section>
+	<section class="about">
+		<h2 class="heading">
+			ABOUT<br>
+			<span class="sub">自己紹介</ｓ>
+		</h2>
+		<div class="clearfix">
+			<div class="portrait">
+				<img src="./img/portrait.png" alt="">
+			</div>
+			<div class="info">
+				<!-- <h3>
+					<i class="fa-solid fa-user"></i>
+					経歴
+				</h3> -->
+				<p>
+					<span class="bold">
+						鈴木 佑佳子
+					</span>
+				</p>
+				<p class="career">
+					岩手県出身
+					<br>
+					千葉大学文学部史学科卒業
+					<br>
+					2019年に独学でプログラミング学習を開始。
+					<br>
+					同年にWebシステム製作会社に入社。
+					<br>
+					HTML, CSS, Javascript, jQuery, PHP, Reactなどの言語を学習。
+					<br>
+					2021年よりWebサイト製作への事業拡大に伴いWebデザインを学習。
+					<br>
+					デザイン・コーディング担当としてサイト制作に従事。
+				</p>
+				<div class="sub_info">
+					<div class="box">
+						<span class="box-title">使用言語</span>
+						<p>HTML / CSS / Javascript / jQuery / PHP / React</p>
+					</div>
+					<div class="box">
+						<span class="box-title">ツール</span>
+						<p>Photoshop / illustrator / AdobeXD / figma</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="works">
+		<h2 class="heading">
+			WORKS<br>
+			<span class="sub">製作事例</span>
+		</h2>
+		<div class="wrap">
+			<div class="item">
+				<a href="https://sy1214.github.io/Hanai-Med/">
+					<img src="" alt="">
+				</a>
+			</div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+		<div class="wrapper_button">
+			<a class="button_arrow" href="works.html">すべて見る</a>
+		</div>
+	</section>
+
+	<section class="contact">
+		<h2 class="heading">
+			CONTACT<br>
+			<span class="sub">お問合せ</ｓ>
+		</h2>
+		<p>
+			ご覧頂きありがとうございます。
+			<br>
+			お問い合わせは下記より承っております。
+		</p>
+		<div class="wrapper_button">
+			<a class="button_arrow" href="contact.html">お問い合わせはこちら</a>
+		</div>
+	</section>
+	<!-- <footer>
+		<p>Copyright©Kitaoka Yukako. All Rights Reserved.</p>
+	</footer> -->
+	<!-- footer -->
+	<footer class="footer">
+		<div id="footer"></div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/stats.js"></script>
+	<!-- header -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#header').load('./inc/header.html');
+		});
+	</script>
+	<!-- footer -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#footer').load('inc/footer.html');
+		});
+	</script>
+</body>
+
+</html>
