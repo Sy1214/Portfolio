@@ -753,11 +753,15 @@ h3:before {
 
 @media (max-width: 768px) {
   .works .item {
-    padding: 30px;
-    width: 96%;
+    padding: 0px;
+    width: 280px;
     height: 200px;
     background-color: #d6d6d6;
     margin: 8px auto;
+  }
+  .works .item img{
+    width: 280px;
+    height: 200px;
   }
 }
 
@@ -820,7 +824,7 @@ h3:before {
   }
 
   .works_info .item table td {
-    padding: 24px;
+    padding: 16px;
   }
 
   .works_info .item table th,
@@ -846,7 +850,7 @@ h3:before {
 .works_info .image img {
   width: 100%;
   max-width: 960px;
-  border: 2px solid #E6E6E6;
+  border: 1px solid #E6E6E6;
 }
 
 .works_info .title {
@@ -876,7 +880,7 @@ h3:before {
 }
 
 .contact_info .heading {
-  margin: 96px auto 120px;
+  margin: 96px auto 96px;
 }
 
 .contact_info .textbox {
