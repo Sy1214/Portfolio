@@ -738,8 +738,8 @@ h3:before {
 
 .works .item img:hover {
   border-color: transparent;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
 }
-
 
 @media (min-width: 768px) {
   .item:not(:nth-child(3n + 3)) {
@@ -777,6 +777,61 @@ h3:before {
   margin-bottom: 96px;
 }
 
+.works_info .item table th {
+  background: #EFEFEF;
+  /* border: solid 1px #ccc; */
+  color: #333;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+}
+
+.works_info .item table td {
+  /* border: solid 1px #ccc; */
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .works_info .item table {
+    border-collapse: separate;
+    border-spacing: 0px 4px;
+  }
+
+  .works_info .item table tr {
+    margin: 8px;
+  }
+
+  .works_info .item table th {
+    width: 20%;
+    border: none;
+  }
+  .works_info .item table td {
+    border: none;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .last td:last-child {
+    /* border-bottom: solid 1px #ccc; */
+    width: 100%;
+  }
+
+  .works_info .item table td {
+    padding: 24px;
+  }
+
+  .works_info .item table th,
+  .works_info .item table td {
+    border-bottom: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .works_info .image {
   margin: 0 auto;
   /* background-color: #979797; */
@@ -784,7 +839,7 @@ h3:before {
   max-width: 960px;
 }
 
-.works_info .image a{
+.works_info .image a {
   outline: none;
 }
 
@@ -796,10 +851,15 @@ h3:before {
 
 .works_info .title {
   font-weight: bold;
-  margin: 16px 0 8px;
+  /* margin: 16px 0 8px; */
   display: inline-block;
   text-decoration: none;
-  color: #666;
+  color: #0168B7;
+  transition: 0.15s;
+}
+
+.works_info .title:hover {
+  opacity: 0.6;
 }
 
 .works_info .skills {
