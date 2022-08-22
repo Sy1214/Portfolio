@@ -595,6 +595,7 @@ canvas {
   max-width: 960px;
   /* background-color: antiquewhite;  */
   margin: 0 auto 96px;
+  padding: 8px;
 }
 
 .about .portrait {
@@ -653,13 +654,25 @@ h3:before {
   padding-top: 8px;
 }
 
-.about .info .bold {
+.about .info .po_name {
   font-weight: 600;
   font-size: 2.4rem;
   color: #0168B7;
 }
 
 @media (max-width: 768px) {
+  .about .info .po_name {
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #0168B7;
+    text-align: center;
+  }
+  .about .info .career {
+    text-align: center;
+  }
+
   .about .portrait {
     width: 100%;
     padding: auto;
@@ -667,18 +680,25 @@ h3:before {
 
   .about .portrait img {
     display: block;
-    width: 50%;
+    width: 72%;
     margin: 0 auto 24px;
   }
 
   .about .info {
-    width: 98%;
+    width: 100%;
     clear: both;
+  }
+
+  .sub_info {
+    margin-top: 32px;
+    width: 100%;
+    text-align: center;
   }
 }
 
 .sub_info {
   margin-top: 32px;
+  width: 100%;
 }
 
 .box {
@@ -759,11 +779,25 @@ h3:before {
     background-color: #d6d6d6;
     margin: 8px auto;
   }
-  .works .item img{
+
+  .works .item img {
     width: 280px;
     height: 200px;
   }
 }
+
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+
+.contact {
+  background-color: #EBF4F7;
+  padding: 64px 0;
+}
+
+/* --------------------------------
+ * works_info
+ * -------------------------------- */
 
 .works_info {
   max-width: 960px;
@@ -811,6 +845,7 @@ h3:before {
     width: 20%;
     border: none;
   }
+
   .works_info .item table td {
     border: none;
     padding: 16px;
@@ -871,13 +906,8 @@ h3:before {
 }
 
 /* --------------------------------
- * contact
+ * contact_info
  * -------------------------------- */
-
-.contact {
-  background-color: #EBF4F7;
-  padding: 64px 0;
-}
 
 .contact_info .heading {
   margin: 96px auto 96px;
@@ -1053,7 +1083,7 @@ h3:before {
 .contact_info .Form-Item-Input:focus,
 .contact_info .Form-Item-Textarea:focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-  border: solid 2px #0cb59b;
+  border: solid 2px #0168B7;
   outline: none;
 }
 
