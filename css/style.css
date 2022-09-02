@@ -340,6 +340,39 @@ body {
   }
 }
 
+.typeTextAnime {
+  font-size: 2rem;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  letter-spacing: 0.2em;
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 5.6rem;
+  text-align: center;
+  color: #003C6A;
+}
+
+.typeTextAnime span {
+  display: none;
+}
+
+.typeTextAnime::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
 /* --------------------------------
  * heading
  * -------------------------------- */
@@ -476,6 +509,29 @@ body {
   width: 100%;
 }
 
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+ 
+.fadeUpTrigger{
+  opacity: 0;
+}
 .about .info {
   width: 64%;
   float: right;
@@ -525,6 +581,7 @@ h3:before {
     color: #0168B7;
     text-align: center;
   }
+
   .about .info .career {
     text-align: center;
   }
@@ -602,6 +659,8 @@ h3:before {
   height: 240px;
   background-color: #E6E6E6;
   border-radius: 10px;
+  
+  opacity: 0;
 }
 
 .works .item img {
@@ -641,6 +700,26 @@ h3:before {
     height: 200px;
   }
 }
+
+.fadeUpInOrder {
+  animation-name:fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
 
 /* --------------------------------
  * contact
