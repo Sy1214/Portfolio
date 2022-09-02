@@ -13,6 +13,7 @@ $(document).ready(function () {
 		$(this).html(txtbox);
 	});
 	typeTxt();
+	$("#splash").delay(1200).fadeOut(1200);
 });
 
 function typeTxt() {

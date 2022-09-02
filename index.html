@@ -14,10 +14,8 @@
 </head>
 
 <body>
-	<div id="loading">
-		<div class="spinner"></div>
-	</div>
-	<header class="header">
+	<div id="splash"></div>
+	<header class="header" >
 		<div id="header"></div>
 	</header>
 	<section class="mv">
@@ -92,16 +90,10 @@
 		<div id="footer"></div>
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
 	<script src="js/textTyping.js"></script>
 	<script src="js/fadeIn.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#header').load('./inc/header.html');
-		});
-		$(document).ready(function () {
-			$('#footer').load('inc/footer.html');
-		});
-	</script>
+	<script src="js/inc.js"></script>
 </body>
 
 </html>

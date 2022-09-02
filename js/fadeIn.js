@@ -6,7 +6,7 @@ $(window).scroll(function () {
 // 自己紹介アニメーション
 function fadeAnime() {
 	$('.fadeUpTrigger').each(function () {
-		var elm = $(this).offset().top - 30;
+		var elm = $(this).offset().top - 10;
 		var scroll = $(window).scrollTop();
 		var height = $(window).height();
 		if (scroll >= elm - height) {
