@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 	<title>Portfolio</title>
-	<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
 	<link rel="stylesheet" type="text/css"
 		href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-14/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,14 +16,12 @@
 <body>
 	<div id="loading">
 		<div class="spinner"></div>
-	 </div>
-
+	</div>
 	<header class="header">
 		<div id="header"></div>
 	</header>
 	<section class="mv">
 	</section>
-	
 	<section class="about">
 		<h2 class="heading">
 			ABOUT<br>
@@ -68,7 +65,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="works">
 		<h2 class="heading">
 			WORKS<br>
@@ -91,34 +87,14 @@
 			<a class="button_arrow" href="works.html">すべて見る</a>
 		</div>
 	</section>
-
-	<!-- <section class="contact">
-		<h2 class="heading">
-			CONTACT<br>
-			<span class="sub">お問合せ</span>
-		</h2>
-		<p>
-			ご覧頂きありがとうございます。
-			<br>
-			お問い合わせは下記より承っております。
-		</p>
-		<div class="wrapper_button">
-			<a class="button_arrow" href="contact.html">お問い合わせはこちら</a>
-		</div>
-	</section> -->
 	<footer class="footer">
 		<div id="footer"></div>
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="js/stats.js"></script>
-	<!-- header -->
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('#header').load('./inc/header.html');
 		});
-	</script>
-	<!-- footer -->
-	<script type="text/javascript">
 		$(document).ready(function () {
 			$('#footer').load('inc/footer.html');
 		});
